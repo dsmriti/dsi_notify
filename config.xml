@@ -8,7 +8,7 @@
     <access origin="*" launch-external="yes"/>	
 	<gap:plugin name="cordova-plugin-whitelist" spec="1.3.2" source="npm" />
     <plugin name="phonegap-plugin-push" spec="1.9.0" source="npm">
-        <param name="SENDER_ID" value="XXXXXXXXXXXXXXXX" />
+        <param name="SENDER_ID" value="713837838534" />
     </plugin>
     
     <allow-intent href="tel:*" />
