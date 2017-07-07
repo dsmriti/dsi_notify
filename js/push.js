@@ -2,7 +2,7 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
     //alert("device ready")
     if (typeof PushNotification != 'undefined') {
-        var push = PushNotification.init({"android": {"senderID": "848679895854", "forceShow": "true"}});
+        var push = PushNotification.init({"android": {"senderID": "713837838534", "forceShow": "true"}});
         
         push.on('registration', function(data) {
 $("#imgURL").val((JSON.stringify(data)))            
