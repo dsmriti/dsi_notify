@@ -18,5 +18,9 @@
 	<preference name="stay-in-webview" value="false" />
 	<preference name="orientation" value="portrait" />   
     <preference name="android-installLocation" value="auto" />
-	
+	<icon src="icon/res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="icon/res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="icon/res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="icon/res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+
 </widget>
