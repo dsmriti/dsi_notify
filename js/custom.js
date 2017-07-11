@@ -8,6 +8,10 @@ function make()
         postData[dataKey]="";
         if($(e).attr("type")=="checkbox") {
             postData[dataKey]=$(e).is(':checked');
+            if($(e).attr("notify")=="sound"){
+              postData[dataKey]="default";  
+            }
+            
         }
         else if($(e).attr("type")=="text"){
              postData[dataKey]=$(e).val();
@@ -15,6 +19,7 @@ function make()
 //        console.log($(e).attr("type"));
     })
      console.log(postData);
+     console.log(JSON.stringify(postData));
  return postData;
 }
 
@@ -23,11 +28,14 @@ function req(){
     $.ajax({
       "url": "https://leztu4mhch.execute-api.us-east-1.amazonaws.com/prod/",
       "method": "POST",
-      "headers": {
+       "data": JSON.stringify(data),
+        "headers": {
         "content-type": "application/json"
       }  
 }).done(function(a,b,c){
-      alert(JSON.stringify(c));
+//      alert(JSON.stringify(c));
+        //var temp=JSON.parse(c.responseJSON);
+        console.log(c);
   })
 .error(function(a,b){
         console.log(a,b);
